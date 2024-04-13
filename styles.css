@@ -1,0 +1,142 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(to right, #fdbb2d, #22c1c3);
+  padding: 10px;
+}
+
+.todo {
+  width: 100%;
+  max-width: 540px;
+  background: #f1e8e8;
+  border-radius: 10px;
+  padding: 40px 30px 70px;
+  margin: 100px auto 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease;
+}
+
+.todo-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.todo h2 {
+  color: #002765;
+  margin-right: 15px;
+  font-size: 25px;
+}
+
+.todo-header img {
+  color: #002765;
+  width: 30px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #d3d9e1;
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+input {
+  border: none;
+  flex: 1;
+  outline: none;
+  background: transparent;
+  padding: 10px 15px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  font-size: 17px;
+}
+
+button {
+  padding: 10px 40px;
+  font-size: 17px;
+  color: #edeef0;
+  background: #002765;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+ul li {
+  list-style: none;
+  font-size: 18px;
+  user-select: none;
+  padding: 12px 8px 12px 50px;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+ul li::before {
+  content: '';
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: url(unchecked.png) no-repeat center center/cover;
+  top: 12px;
+  left: 8px;
+}
+
+ul li.checked {
+  color: #555;
+  text-decoration: line-through;
+  transition: all 0.4s ease;
+}
+
+ul li.checked::before {
+  background: url(checked.png) no-repeat center center/cover;
+}
+
+ul li span {
+  color: red;
+  font-size: 25px;
+  transition: all 0.4s ease;
+  position: absolute;
+  top: 5px;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  transition: all 0.4s ease;
+}
+
+ul li span:hover {
+  transform: scale(0.9);
+}
+
+@media screen and (max-width: 678px) {
+  input {
+    width: 75%;
+  }
+
+  button {
+    width: 25%;
+    padding: 10px;
+  }
+}
