@@ -1,3 +1,5 @@
+'use strict';
+
 const data = new Date();
 
 const inputBox = document.querySelector('#input-box');
@@ -26,17 +28,18 @@ const addTask = () => {
     alert('Please add a Task');
   } else {
     let li = document.createElement('li');
-    li.textContent = inputBox.value; // Set the text content of the li element
-    listContainer.appendChild(li); // Append li to the ul element inside listContainer
+    li.textContent = inputBox.value;
+    listContainer.appendChild(li);
     let span = document.createElement('span');
     span.innerHTML = '\u00d7';
     li.appendChild(span);
     let timestamp = document.createElement('p');
-    timestamp.textContent = getTimeStamp(); // Get current timestamp
+    timestamp.textContent = getTimeStamp();
     li.appendChild(timestamp);
   }
 
-  inputBox.value = ''; // clear out the input box
+  inputBox.value = '';
+  saveData();
 };
 
 // Function to get current timestamp in the format HH:MM:SS
@@ -54,9 +57,23 @@ listContainer.addEventListener(
   (e) => {
     if (e.target.tagName === 'LI') {
       e.target.classList.toggle('checked');
+      saveData();
     } else if (e.target.tagName === 'SPAN') {
       e.target.parentElement.remove();
+      saveData();
     }
   },
   false
 );
+
+//save data
+
+const saveData = () => {
+  localStorage.setItem('data', listContainer.innerHTML);
+};
+
+const showTask = () => {
+  listContainer.innerHTML = localStorage.getItem('data');
+};
+
+showTask();
