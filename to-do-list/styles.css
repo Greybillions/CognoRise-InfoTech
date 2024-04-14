@@ -129,6 +129,8 @@ ul li span {
   transition: all 0.4s ease;
   position: absolute;
   top: 5px;
+  justify-self: center;
+  align-self: center;
   right: 0;
   width: 40px;
   height: 40px;
@@ -144,6 +146,8 @@ ul li span:hover {
 ul li p {
   padding: 0 3px;
   font-size: 13px;
+  justify-self: center;
+  align-self: center;
 }
 
 @media screen and (max-width: 678px) {
