@@ -99,6 +99,7 @@ ul li {
   position: relative;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 ul li::before {
@@ -148,6 +149,9 @@ ul li p {
   font-size: 13px;
   justify-self: center;
   align-self: center;
+  position: absolute;
+  bottom: -10px;
+  left: 38px;
 }
 
 @media screen and (max-width: 678px) {
