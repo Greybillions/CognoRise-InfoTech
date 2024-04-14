@@ -23,6 +23,16 @@
   transition: all 0.4s ease;
 }
 
+.date-hour {
+  display: flex;
+  gap: 20px;
+  color: #002765;
+  font-size: 17px;
+  padding: 15px 10px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
 .todo-header {
   display: flex;
   justify-content: flex-start;
@@ -84,7 +94,7 @@ ul li {
   list-style: none;
   font-size: 18px;
   user-select: none;
-  padding: 12px 8px 12px 50px;
+  padding: 12px 35px 12px 42px;
   cursor: pointer;
   position: relative;
   display: flex;
@@ -115,6 +125,7 @@ ul li.checked::before {
 ul li span {
   color: red;
   font-size: 25px;
+  font-weight: 400;
   transition: all 0.4s ease;
   position: absolute;
   top: 5px;
@@ -130,6 +141,11 @@ ul li span:hover {
   transform: scale(0.9);
 }
 
+ul li p {
+  padding: 0 3px;
+  font-size: 13px;
+}
+
 @media screen and (max-width: 678px) {
   input {
     width: 75%;
@@ -138,5 +154,9 @@ ul li span:hover {
   button {
     width: 25%;
     padding: 10px;
+  }
+
+  ul li {
+    padding: 12px 35px 12px 42px;
   }
 }

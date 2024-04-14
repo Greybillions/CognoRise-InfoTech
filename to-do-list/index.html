@@ -16,12 +16,16 @@
     <link rel="stylesheet" href="styles.css" />
     <title>To-Do List</title>
   </head>
-  <body>
+  <body onload="time()">
     <div class="container">
       <div class="todo">
         <div class="todo-header">
           <h2>To-Do List</h2>
           <img src="img.webp" alt="" />
+        </div>
+        <div class="date-hour">
+          <p id="date"></p>
+          <p id="hour">Hour</p>
         </div>
         <div class="row">
           <input type="text" id="input-box" placeholder="Add Task" />
