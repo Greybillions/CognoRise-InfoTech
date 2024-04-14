@@ -28,9 +28,16 @@ const addTask = () => {
     let li = document.createElement('li');
     li.textContent = inputBox.value;
     listContainer.appendChild(li);
+
+    let editButton = document.createElement('button');
+    editButton.innerHTML = '<i class="fas fa-edit"></i>';
+    editButton.classList.add('edit-btn');
+    li.appendChild(editButton);
+
     let span = document.createElement('span');
     span.innerHTML = '\u00d7';
     li.appendChild(span);
+
     let timestamp = document.createElement('p');
     timestamp.textContent = getTimeStamp();
     li.appendChild(timestamp);
@@ -59,13 +66,25 @@ listContainer.addEventListener(
     } else if (e.target.tagName === 'SPAN') {
       e.target.parentElement.remove();
       saveData();
+    } else if (e.target.classList.contains('edit-btn')) {
+      editTask(e.target.parentElement);
     }
   },
   false
 );
 
-//save data
+//edit
+const editTask = (taskElement) => {
+  const taskText = taskElement.firstChild.textContent;
+  const newTaskText = prompt('Edit task:', taskText);
 
+  if (newTaskText !== null && newTaskText.trim() !== '') {
+    taskElement.firstChild.textContent = newTaskText;
+    saveData();
+  }
+};
+
+//save data
 const saveData = () => {
   localStorage.setItem('data', listContainer.innerHTML);
 };

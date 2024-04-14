@@ -150,8 +150,21 @@ ul li p {
   justify-self: center;
   align-self: center;
   position: absolute;
-  bottom: -10px;
+  bottom: -24px;
   left: 38px;
+}
+.edit-btn {
+  background-color: transparent;
+  border: none;
+  color: #4caf50;
+  cursor: pointer;
+  font-size: 16px;
+  cursor: pointer;
+  position: absolute;
+  bottom: -24px;
+  right: 6px;
+  padding: 0;
+  width: 26px;
 }
 
 @media screen and (max-width: 678px) {
