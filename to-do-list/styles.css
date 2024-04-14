@@ -99,7 +99,7 @@ ul li {
   position: relative;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 ul li::before {
