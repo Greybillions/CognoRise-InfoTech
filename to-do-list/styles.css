@@ -162,5 +162,7 @@ ul li p {
 
   ul li {
     padding: 12px 35px 12px 42px;
+    font-size: 14px;
+    font-weight: 600;
   }
 }
