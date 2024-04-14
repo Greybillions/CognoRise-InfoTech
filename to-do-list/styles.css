@@ -161,11 +161,10 @@ ul li p {
   font-size: 20px;
   cursor: pointer;
   position: absolute;
-  bottom: -24px;
-  right: 6px;
+  bottom: -30px;
+  right: 0;
+  width: 40px;
   padding: 0;
-  width: 26px;
-  margin-top: 2px;
 }
 
 @media screen and (max-width: 678px) {
@@ -183,7 +182,7 @@ ul li p {
   }
 
   ul li {
-    padding: 12px 35px 12px 42px;
+    padding: 12px 35px 12px 48px;
     font-size: 14px;
     font-weight: 600;
   }
