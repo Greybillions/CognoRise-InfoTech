@@ -125,7 +125,7 @@ ul li.checked::before {
 
 ul li span {
   color: red;
-  font-size: 35px;
+  font-size: 17px;
   font-weight: 400;
   transition: all 0.4s ease;
   position: absolute;
@@ -166,6 +166,12 @@ ul li p {
   width: 40px;
   padding: 0;
   z-index: 99;
+}
+
+#clear-all {
+  display: none;
+  align-items: center;
+  justify-content: center;
 }
 
 @media screen and (max-width: 678px) {

@@ -9,6 +9,7 @@ const timeElapsed = Date.now();
 const today = new Date(timeElapsed);
 document.querySelector('#date').innerHTML = today.toDateString();
 
+//time
 const time = () => {
   const data = new Date();
   let h = data.getHours();
@@ -35,7 +36,7 @@ const addTask = () => {
     li.appendChild(editButton);
 
     let span = document.createElement('span');
-    span.innerHTML = '\u00d7';
+    span.innerHTML = '<i class="fas fa-trash" aria-hidden="true"></i>';
     li.appendChild(span);
 
     let timestamp = document.createElement('p');
@@ -45,6 +46,7 @@ const addTask = () => {
 
   inputBox.value = '';
   saveData();
+  toggleClearButton();
 };
 
 // Function to get current timestamp in the format HH:MM:SS
@@ -63,17 +65,18 @@ listContainer.addEventListener(
     if (e.target.tagName === 'LI') {
       e.target.classList.toggle('checked');
       saveData();
-    } else if (e.target.tagName === 'SPAN') {
-      e.target.parentElement.remove();
+    } else if (e.target.classList.contains('fa-trash')) {
+      e.target.closest('li').remove();
       saveData();
-    } else if (e.target.tagName === 'I') {
+      toggleClearButton();
+    } else if (e.target.classList.contains('fa-edit')) {
       editTask(e.target.parentElement);
     }
   },
   false
 );
 
-//edit
+//edit task
 const editTask = (taskElement) => {
   const taskText = taskElement.firstChild.textContent;
   const newTaskText = prompt('Edit task:', taskText);
@@ -81,6 +84,31 @@ const editTask = (taskElement) => {
   if (newTaskText !== null && newTaskText.trim() !== '') {
     taskElement.firstChild.textContent = newTaskText;
     saveData();
+  }
+};
+
+//clear all task
+const clearBtn = document.querySelector('#clear-all');
+clearBtn.addEventListener('click', () => {
+  clearAllTasks();
+  toggleClearButton();
+});
+
+const clearAllTasks = () => {
+  const taskList = document.querySelector('#list-container');
+  taskList.innerHTML = ''; // Clear the list container
+  localStorage.removeItem('data'); // Remove the saved data from localStorage
+};
+
+//hide clear btn
+const toggleClearButton = () => {
+  const taskList = document.querySelector('#list-container');
+  const clearBtn = document.querySelector('#clear-all');
+
+  if (taskList.children.length > 1) {
+    clearBtn.style.display = 'block'; // Show the clear button
+  } else {
+    clearBtn.style.display = 'none'; // Hide the clear button
   }
 };
 
