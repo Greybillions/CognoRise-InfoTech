@@ -111,6 +111,7 @@ ul li::before {
   background: url(unchecked.png) no-repeat center center/cover;
   top: 16px;
   left: 6px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
 }
 
 ul li.checked {
