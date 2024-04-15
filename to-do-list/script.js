@@ -66,7 +66,7 @@ listContainer.addEventListener(
     } else if (e.target.tagName === 'SPAN') {
       e.target.parentElement.remove();
       saveData();
-    } else if (e.target.classList.contains('edit-btn')) {
+    } else if (e.target.tagName === 'I') {
       editTask(e.target.parentElement);
     }
   },
