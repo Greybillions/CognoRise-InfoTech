@@ -105,12 +105,12 @@ ul li {
 ul li::before {
   content: '';
   position: absolute;
-  width: 28px;
-  height: 28px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   background: url(unchecked.png) no-repeat center center/cover;
-  top: 12px;
-  left: 8px;
+  top: 17px;
+  left: 6px;
 }
 
 ul li.checked {
