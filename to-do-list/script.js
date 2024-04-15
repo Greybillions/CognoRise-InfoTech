@@ -82,7 +82,7 @@ const editTask = (taskElement) => {
   const newTaskText = prompt('Edit task:', taskText);
 
   if (newTaskText !== null && newTaskText.trim() !== '') {
-    taskElement.firstChild.textContent = newTaskText;
+    taskElement.parentElement.firstChild.textContent = newTaskText;
     saveData();
   }
 };

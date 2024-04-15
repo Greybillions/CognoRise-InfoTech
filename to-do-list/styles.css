@@ -170,8 +170,8 @@ ul li p {
 
 #clear-all {
   display: none;
-  align-items: center;
-  justify-content: center;
+  width: auto;
+  padding: 10px 20px;
 }
 
 @media screen and (max-width: 678px) {
