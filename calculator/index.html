@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="app">
+      <div class="calculator">
+        <!-- display -->
+        <div class="display">
+          <div class="content">
+            <div class="input">200 <span class="operator">x</span> 200</div>
+            <div class="output">12,000</div>
+          </div>
+        </div>
+
+        <!-- Keys -->
+        <div class="keys">
+          <div data-key="clear" class="key action">
+            <span>AC</span>
+          </div>
+
+          <div data-key="brackets" class="key action">
+            <span>( )</span>
+          </div>
+
+          <div data-key="%" class="key action">
+            <span><i class="fas fa-percent percent"></i></span>
+          </div>
+
+          <div data-key="/" class="key operator">
+            <span><i class="fas fa-divide"></i></span>
+          </div>
+
+          <div data-key="7" class="key">
+            <span><i class="fas fa-7"></i></span>
+          </div>
+
+          <div data-key="8" class="key">
+            <span><i class="fas fa-8"></i></span>
+          </div>
+
+          <div data-key="9" class="key">
+            <span><i class="fas fa-9"></i></span>
+          </div>
+
+          <div data-key="*" class="key operator">
+            <span><i class="fas fa-multiply"></i></span>
+          </div>
+
+          <div data-key="4" class="key">
+            <span><i class="fas fa-4"></i></span>
+          </div>
+
+          <div data-key="5" class="key">
+            <span><i class="fas fa-5"></i></span>
+          </div>
+
+          <div data-key="6" class="key">
+            <span><i class="fas fa-6"></i></span>
+          </div>
+
+          <div data-key="-" class="key operator">
+            <span><i class="fas fa-subtract"></i></span>
+          </div>
+
+          <div data-key="1" class="key">
+            <span><i class="fas fa-1"></i></span>
+          </div>
+
+          <div data-key="2" class="key">
+            <span><i class="fas fa-2"></i></span>
+          </div>
+
+          <div data-key="3" class="key">
+            <span><i class="fas fa-3"></i></span>
+          </div>
+
+          <div data-key="+" class="key operator">
+            <span><i class="fas fa-add"></i></span>
+          </div>
+
+          <div data-key="backspace" class="key action">
+            <span>&lt;</span>
+          </div>
+
+          <div data-key="0" class="key">
+            <span><i class="fas fa-0"></i></span>
+          </div>
+
+          <div data-key="." class="key">
+            <span>.</span>
+          </div>
+
+          <div data-key="=" class="key action">
+            <span><i class="fas fa-equals"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
