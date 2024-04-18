@@ -13,7 +13,7 @@ for (let key of keys) {
       displayOutput.innerHTML = '';
     } else if (value === 'backspace') {
       input = input.slice(0, -1);
-      displayInput.innerHTML = input;
+      displayInput.innerHTML = clearInput(input);
     } else if (value === '=') {
       let result = eval(input);
       displayOutput.innerHTML = result;
@@ -27,11 +27,37 @@ for (let key of keys) {
         input += '(';
       }
 
-      displayInput.innerHTML = input;
+      displayInput.innerHTML = clearInput(input);
     } else {
       input += value;
-      displayInput.innerHTML = input;
+      displayInput.innerHTML = clearInput(input);
     }
-    console.log(value);
   });
 }
+
+const clearInput = (input) => {
+  let inputArray = input.split('');
+  let inputArrayLength = inputArray.length;
+
+  for (let i = 0; i < inputArrayLength; i++) {
+    if (inputArray[i] === '*') {
+      inputArray[i] = `<span> <i class="operator fas fa-multiply"></i> </span>`;
+    } else if (inputArray[i] === '/') {
+      inputArray[i] = `<span> <i class="operator fas fa-divide"></i> </span>`;
+    } else if (inputArray[i] === '-') {
+      inputArray[i] = `<span> <i class="operator fas fa-minus"></i> </span>`;
+    } else if (inputArray[i] === '+') {
+      inputArray[i] = `<span> <i class="percent fas fa-plus"></i> </span>`;
+    } else if (inputArray[i] === '%') {
+      inputArray[i] = `<span> <i class="operator fas fa-percent"></i> </span>`;
+    } else if (inputArray[i] === '(') {
+      inputArray[i] = `<span class="brackets">(</span>`;
+    } else if (inputArray[i] === ')') {
+      inputArray[i] = `<span class="brackets">)</span>`;
+    }
+  }
+
+  return inputArray.join('');
+};
+
+const clearOutput = (output) => {};
