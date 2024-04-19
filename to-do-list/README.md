@@ -52,7 +52,7 @@ This is a simple to-do list application built using HTML, CSS, and JavaScript. I
 
 ## Usage
 
-1. Open `(coming soon)` in a web browser.
+1. Visit [My To Do](https://my-todo-one-delta.vercel.app/) in a web browser.
 2. The to-do list interface will be displayed.
 3. To add a new task, enter the task description in the input field and press Enter or click the "Add Task" button.
 4. To edit a task, click the edit icon (pencil icon) next to the task, and a prompt will appear to enter the new task description.

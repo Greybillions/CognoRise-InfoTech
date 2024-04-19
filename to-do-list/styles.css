@@ -195,3 +195,24 @@ ul li p {
     font-weight: 600;
   }
 }
+
+footer {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding: 3px 0;
+  margin-top: 50px;
+}
+
+footer p {
+  border-radius: 30px;
+  font-weight: 400;
+}
+
+footer p a {
+  text-decoration: none;
+  color: #002765;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: 0.3s;
+}
