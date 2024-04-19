@@ -16,7 +16,7 @@ for (let key of keys) {
       displayInput.innerHTML = clearInput(input);
     } else if (value === '=') {
       let result = eval(prepareInput(input));
-      displayOutput.innerHTML = clearOutput(result);
+      displayOutput.innerHTML = result;
     } else if (value === 'brackets') {
       let openingBrackets = input.split('(').length - 1;
       let closingBrackets = input.split(')').length - 1;
@@ -62,33 +62,33 @@ const clearInput = (input) => {
   return inputArray.join('');
 };
 
-const clearOutput = (output) => {
-  let outputString = output.toString();
-  let decimal = outputString.split('.');
+// const clearOutput = (output) => {
+//   let outputString = output.toString();
+//   let decimal = outputString.split('.');
 
-  outputString = outputString.split('.')[0];
+//   outputString = outputString.split('.')[0];
 
-  let outputArray = outputString.split('');
+//   let outputArray = outputString.split('');
 
-  if (outputArray.length > 3) {
-    for (let i = outputArray.length - 3; i > 0; i -= 3) {
-      outputArray.splice(i, 0, ',');
-    }
-  }
+//   if (outputArray.length > 3) {
+//     for (let i = outputArray.length - 3; i > 0; i -= 3) {
+//       outputArray.splice(i, 0, ',');
+//     }
+//   }
 
-  if (decimal) {
-    outputArray.push('.');
-    outputArray.push(decimal);
-  }
+//   if (decimal) {
+//     outputArray.push('.');
+//     outputArray.push(decimal);
+//   }
 
-  return outputArray.join('');
-};
+//   return outputArray.join('');
+// };
 
 const validateInput = (value) => {
   let lastInput = input.slice(-1);
   let operators = ['+', '-', '*', '/', '%'];
 
-  if (value === '.' && lastInput === '.') {
+  if (value === '.' && lastInput == '.') {
     return false;
   }
 
