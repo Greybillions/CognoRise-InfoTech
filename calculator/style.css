@@ -121,6 +121,7 @@ footer {
   display: inline-block;
   width: 100%;
   text-align: center;
+  padding: 3px 0;
 }
 
 footer p {
