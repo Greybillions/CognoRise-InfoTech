@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Currency Calculator</h2>
+      <form action="#">
+        <div class="amount">
+          <p>Enter Amount</p>
+          <input type="text" value="1000" />
+        </div>
+        <div class="droplist">
+          <div class="from">
+            <p>From</p>
+            <div class="select-box">
+              <img src="https://flagcdn.com/48x36/ng.png" alt="" />
+              <select name="" id="">
+                <option value="NG">NG</option>
+                <option value="USD">USD</option>
+              </select>
+            </div>
+          </div>
+          <div class="icon"><i class="fas fa-exchange-alt"></i></div>
+          <div class="to">
+            <p>To</p>
+            <div class="select-box">
+              <img src="https://flagcdn.com/48x36/us.png" alt="" />
+              <select name="" id="">
+                <option value="USD">USD</option>
+                <option value="NG">NG</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="exchange-rate">Getting exchange rate...</div>
+        <button>Get Exchange Rate</button>
+      </form>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
