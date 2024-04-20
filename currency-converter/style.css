@@ -8,7 +8,7 @@
 }
 
 ::selection {
-  background: purple;
+  background: 002765;
   color: white;
 }
 
@@ -18,7 +18,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: purple;
+  background: rgb(0, 102, 128);
 }
 
 .container {
@@ -83,6 +83,18 @@ body {
   cursor: pointer;
 }
 
+.container form .droplist .select-box select::-webkit-scrollbar {
+  width: 8px;
+}
+
+.container form .droplist .select-box select::-webkit-scrollbar-track {
+  background: #ccc;
+}
+.container form .droplist .select-box select::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 8px;
+}
+
 .container form .droplist .icon {
   font-size: 22px;
   cursor: pointer;
@@ -107,7 +119,7 @@ body {
 }
 
 .container form button {
-  background: purple;
+  background: #002765;
   color: white;
   padding: 10px 15px;
   cursor: pointer;
@@ -115,6 +127,20 @@ body {
 }
 
 .container form button:hover {
-  background: rgb(150, 4, 150);
+  opacity: 0.95;
   transform: scale(0.98);
+}
+
+footer {
+  display: inline-block;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+footer a {
+  text-decoration: none;
+  color: #002765;
+  font-weight: 500;
 }

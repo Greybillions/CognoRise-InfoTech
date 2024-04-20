@@ -19,17 +19,14 @@
       <form action="#">
         <div class="amount">
           <p>Enter Amount</p>
-          <input type="text" value="1000" />
+          <input type="text" value="1" />
         </div>
         <div class="droplist">
           <div class="from">
             <p>From</p>
             <div class="select-box">
               <img src="https://flagcdn.com/48x36/ng.png" alt="" />
-              <select name="" id="">
-                <option value="NG">NG</option>
-                <option value="USD">USD</option>
-              </select>
+              <select name="" id=""></select>
             </div>
           </div>
           <div class="icon"><i class="fas fa-exchange-alt"></i></div>
@@ -37,17 +34,23 @@
             <p>To</p>
             <div class="select-box">
               <img src="https://flagcdn.com/48x36/us.png" alt="" />
-              <select name="" id="">
-                <option value="USD">USD</option>
-                <option value="NG">NG</option>
-              </select>
+              <select name="" id=""></select>
             </div>
           </div>
         </div>
-        <div class="exchange-rate">Getting exchange rate...</div>
+        <div class="exchange-rate"></div>
         <button>Get Exchange Rate</button>
+        <footer>
+          <p>
+            Designed by
+            <a target="_blank" href="https://graham-dev.vercel.app"
+              >Greybillions</a
+            >
+          </p>
+        </footer>
       </form>
     </div>
+    <script src="country-list.js"></script>
     <script src="app.js"></script>
   </body>
 </html>
