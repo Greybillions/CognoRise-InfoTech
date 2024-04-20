@@ -22,7 +22,8 @@ body {
 }
 
 .container {
-  padding: 30px;
+  padding: 18px;
+  width: 60vw;
   background: white;
   border-radius: 6px;
   box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.01);
@@ -58,8 +59,8 @@ body {
   height: 50px;
   font-size: 18px;
   border: 1px solid #999;
-  padding: 0 20px 0 20px;
-  width: auto;
+  padding-left: 10px;
+  max-width: 90%;
   margin-bottom: 20px;
 }
 
