@@ -149,5 +149,6 @@ footer a {
 @media screen and (max-width: 768px) {
   .container {
     width: 80vw;
+    margin-top: -220px;
   }
 }
