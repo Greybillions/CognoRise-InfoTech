@@ -1,3 +1,5 @@
+'use strict';
+
 let dropList = document.querySelectorAll('form select');
 let fromCurr = document.querySelector('.from select');
 let toCurr = document.querySelector('.to select');

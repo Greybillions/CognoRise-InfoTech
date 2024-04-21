@@ -1,5 +1,3 @@
-Sure, here's a README file for the provided code:
-
 # Currency Converter
 
 This is a simple currency converter application that uses the [ExchangeRate-API](https://exchangerate.host/#/#docs) to fetch the latest exchange rates and convert between different currencies.

@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --primary-color: hsl(235, 35%, 19%);
+  --secondary-color: hsl(358, 78%, 69%);
+  --box-color: hsl(235, 36%, 35%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  background: var(--primary-color);
+  height: 100%;
+}
+
+.container {
+  margin-top: 70px;
+  background: var(--box-color);
+  padding: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height: auto;
+  width: 376px;
+}
+
+.container h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.container .date-time {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  color: #eab1b1;
+}
+
+.container .date-time .date p,
+.container .date-time .time p {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.container .date-time .date input,
+.container .date-time .time input {
+  outline: none;
+  width: 150px;
+  padding: 10px 15px;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 5px;
+  border: 1px solid var(--secondary-color);
+}
+
+.container .control {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin: 20px 0 40px 0;
+}
+
+.container .control button {
+  width: 100%;
+  gap: 10px;
+  cursor: pointer;
+  padding: 8px 10px;
+  font-size: 16px;
+  transition: 0.3s;
+  border: none;
+  border-radius: 5px;
+  color: #ddd;
+  background: var(--secondary-color);
+}
+
+.container .control button:first-child,
+.container .control button:nth-child(2) {
+  margin-right: 10px;
+}
+
+.container .control button:hover {
+  color: #000;
+  background: #eab1b1;
+}
+
+.container .output {
+  width: 100%;
+  text-align: center;
+  color: #ddd;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.container .output p span {
+  display: inline-block;
+  /* padding: 5px 8px; */
+  width: 20%;
+  padding: 10px 15px 15px 15px;
+
+  border: none;
+  border-radius: 5px;
+  background: var(--secondary-color);
+}
+
+.container footer {
+  display: inline-block;
+  font-size: 16px;
+  text-align: center;
+  margin: 30px 0;
+  width: 100%;
+  color: #e59898;
+}
+
+.container footer a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 678px) {
+  .container {
+    width: 80vw;
+  }
+
+  .container h2 {
+    font-size: 25px;
+  }
+
+  .container .date-time .date input,
+  .container .date-time .time input {
+    width: 130px;
+  }
+
+  .container .date-time .time input {
+    margin-left: 10px;
+  }
+}

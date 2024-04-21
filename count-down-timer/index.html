@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Count Down Timer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Count Down Timer</h2>
+
+      <div class="date-time">
+        <div class="date">
+          <p>Enter Date</p>
+          <input id="date" type="date" />
+        </div>
+        <div class="time">
+          <p>Enter Time</p>
+          <input id="time" type="time" />
+        </div>
+      </div>
+
+      <div class="control">
+        <button id="start"><i class="fas fa-play"></i></button>
+        <button id="pause"><i class="fas fa-pause"></i></button>
+        <button id="reset"><i class="fas fa-rotate-left"></i></button>
+      </div>
+
+      <div class="output">
+        <p>
+          <span id="day">0</span> : <span id="hour">0</span> :
+          <span id="minute">0</span> : <span id="second">0</span>
+        </p>
+      </div>
+      <footer>
+        <p>
+          Designed by
+          <a target="_blank" href="https://graham-dev.vercel.app"
+            >Greybillions</a
+          >
+        </p>
+      </footer>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
