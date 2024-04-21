@@ -148,11 +148,6 @@ footer a {
 
 @media screen and (max-width: 768px) {
   .container {
-    width: 75vw;
-  }
-}
-@media screen and (max-width: 376px) {
-  .container {
     width: 80vw;
   }
 }
