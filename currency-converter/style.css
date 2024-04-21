@@ -3,7 +3,7 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: 0;
+  box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -23,7 +23,7 @@ body {
 
 .container {
   padding: 18px;
-  width: 60vw;
+
   background: white;
   border-radius: 6px;
   box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.01);
@@ -60,7 +60,7 @@ body {
   font-size: 18px;
   border: 1px solid #999;
   padding-left: 10px;
-  max-width: 90%;
+
   margin-bottom: 20px;
 }
 
@@ -144,4 +144,15 @@ footer a {
   text-decoration: none;
   color: #002765;
   font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 75vw;
+  }
+}
+@media screen and (max-width: 376px) {
+  .container {
+    width: 80vw;
+  }
 }

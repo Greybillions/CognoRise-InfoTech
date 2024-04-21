@@ -9,10 +9,10 @@ for (let i = 0; i < dropList.length; i++) {
   for (let currCode in country_list) {
     let selected =
       i == 0
-        ? currCode === 'NGN'
+        ? currCode === 'USD'
           ? `selected`
           : ''
-        : currCode === 'USD'
+        : currCode === 'NGN'
         ? `selected`
         : '';
 
