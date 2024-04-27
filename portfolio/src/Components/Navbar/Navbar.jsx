@@ -61,6 +61,16 @@ const Navbar = () => {
           </a>
           {menu === 'contact' ? <img src={underline} alt='' /> : <></>}
         </li>
+        <li>
+          <a
+            className='nav-connect show'
+            href='http://greyboyle.hashnode.dev'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            My Blog
+          </a>
+        </li>
       </ul>
       <div>
         <a

@@ -1,8 +1,9 @@
 const Services_Data = [
   {
     s_no: '01',
-    s_name: 'Web design',
-    s_desc: 'Web development is the process of building, programming...',
+    s_name: 'Front-end development',
+    s_desc:
+      'Building interactive, responsive user interfaces using web technologies skillfully.',
   },
   {
     s_no: '02',
@@ -17,17 +18,20 @@ const Services_Data = [
   {
     s_no: '04',
     s_name: 'App design',
-    s_desc: 'Web development is the process of building, programming...',
+    s_desc:
+      'Crafting visually appealing, user-friendly mobile applications interfaces systematically.',
   },
   {
     s_no: '05',
     s_name: 'Digital marketing',
-    s_desc: 'Web development is the process of building, programming...',
+    s_desc:
+      'Promoting products/services online through various digital channels/platforms strategically.',
   },
   {
     s_no: '06',
     s_name: 'Social Media Management',
-    s_desc: 'Web development is the process of building, programming...',
+    s_desc:
+      'Curating, scheduling, monitoring social media content across platforms professionally.',
   },
 ];
 

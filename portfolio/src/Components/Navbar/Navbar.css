@@ -67,6 +67,10 @@
   color: #fff;
 }
 
+.nav-connect.show {
+  display: none;
+}
+
 .nav-connect:hover {
   transform: scale(1.05);
 }
@@ -84,6 +88,10 @@
 
   .nav-connect {
     display: none;
+  }
+
+  .nav-connect.show {
+    display: inline-block;
   }
 
   .nav-mob-open {
@@ -155,5 +163,4 @@
     flex-direction: row;
     margin-top: 50px;
   }
-
 }
