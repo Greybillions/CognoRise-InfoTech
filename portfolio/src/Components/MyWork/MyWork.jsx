@@ -2,6 +2,7 @@ import './MyWork.css';
 import theme_pattern from '../../assets/theme_pattern.svg';
 import mywork_data from '../../assets/mywork_data';
 import arrow_icon from '../../assets/arrow_icon.svg';
+
 const MyWork = () => {
   return (
     <div id='projects' className='mywork'>

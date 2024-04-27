@@ -10,7 +10,7 @@ const Contact = () => {
 
   if (state.succeeded) {
     return (
-      <h2 style={{ margin: '70px 0 70px 120px' }}>
+      <h2 style={{ margin: '70px 0 70px 50px' }}>
         Thanks for reaching out! kindly Reload Page.
       </h2>
     );
