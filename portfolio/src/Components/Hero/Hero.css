@@ -92,3 +92,16 @@
     margin: 20px 15px;
   }
 }
+
+@media (max-width: 490px) {
+  .hero h1 {
+    font-size: 27px;
+  }
+  .hero h1 span {
+    font-size: 35px;
+  }
+
+  .hero .hero-action {
+    gap: 15px;
+  }
+}
