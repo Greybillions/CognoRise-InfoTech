@@ -11,7 +11,7 @@ This is a simple countdown timer application built with HTML, CSS, and JavaScrip
 
 ## Usage
 
-1. Open (coming soon) or HTML file in your browser.
+1. Open [Countdown Timer](https://count-down-timer-cr.netlify.app) or HTML file in your browser.
 2. Enter the target date in the "Date" input field (format: YYYY-MM-DD).
 3. Enter the target time in the "Time" input field (format: HH:MM).
 4. Click the "Start" button to begin the countdown.

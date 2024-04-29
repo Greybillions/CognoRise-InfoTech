@@ -11,7 +11,7 @@ This is a simple calculator application built using HTML, CSS, and JavaScript. I
 
 ## Usage
 
-1. Open [Simple Calculator](https://simple-calculator-topaz-beta.vercel.app/) in a web browser.
+1. Open [Simple Calculator](https://simple-calculator-seven-umber.vercel.app/) in a web browser.
 2. The calculator interface will be displayed, consisting of a display area and a series of buttons representing digits, operators, and special functions.
 3. Click on the digit buttons to enter numbers into the input display.
 4. Click on the operator buttons (+, -, \*, /) to perform the corresponding arithmetic operation.
